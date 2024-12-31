@@ -9,7 +9,7 @@ import { FaPhone } from "react-icons/fa6";
 import { Link, useNavigate } from 'react-router-dom';
 import rightIMG from "../images/signUpRight.png"
 import { api_base_url } from '../Helper';
-
+// sign up function 
 const SignUp = () => {
   const navigate = useNavigate(); 
   const [username, setUsername] = useState("");
@@ -18,7 +18,7 @@ const SignUp = () => {
   const [phone, setPhone] = useState("");
   const [pwd, setPwd] = useState("");
   const [error, setError] = useState("");
-
+  // create user
   const createUser = (e) => {
     e.preventDefault();
     fetch(api_base_url + "/signUp", {
